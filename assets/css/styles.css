@@ -9,17 +9,17 @@
   /*Color mode HSL(hue, saturation, lightness)*/
   /* 
       Change favorite color
-      Default: hsl(255, 90%, 60%)
-      Orange: hsl(14, 90%, 60%) - Blue: hsl(210, 90%, 50%)
-      Pink: hsl(356, 100%, 65%) - Green: hsl(162, 90%, 40%)
+      Default: hsl(200, 94%, 14%)
+      Orange: hsl(31, 100%, 49%) - Blue: hsl(192, 70%, 43%)
+      Yellow: hsl(43, 100%, 51%) - Light-Blue: hsl(199, 63%, 73%)
 
       For more colors visit: https://colors.dopely.top/color-pedia
       -> Choose any color 
       -> Click on tab (Color Conversion)
       -> Copy the color mode (HSL)
   */
-  --hue: 255;
-  --first-color: hsl(var(--hue), 90%, 60%);
+  --hue: 200;
+  --first-color: hsl(var(--hue), 94%, 14%);
   --first-color-alt: hsl(var(--hue), 82%, 56%);
   --first-color-light: hsl(var(--hue), 40%, 80%);
   --title-color: hsl(var(--hue), 24%, 16%);
