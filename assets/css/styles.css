@@ -20,7 +20,7 @@
   */
   --hue: 200;
   --first-color: hsl(var(--hue), 94%, 14%);
-  --first-color-alt: hsl(var(--hue), 82%, 56%);
+  --first-color-alt: hsl(var(--hue), 70%, 43%);
   --first-color-light: hsl(var(--hue), 40%, 80%);
   --title-color: hsl(var(--hue), 24%, 16%);
   --text-color: hsl(var(--hue), 8%, 45%);
@@ -231,12 +231,28 @@ img {
 }
 
 /* Show menu */
+.show-menu {
+  top: 0;
+}
 
 /* Change background header */
 
 /* Header background color of other pages */
 
 /*=============== BUTTON ===============*/
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: var(--white-color);
+  font-weight: var(--font-semi-bold);
+  padding: 1rem 2rem;
+  transition: background-color 0.4s, box-shadow 0.4s;
+}
+
+.button:hover {
+  background-color: var(--first-color-alt);
+  box-shadow: 0 8px 24px hsl(var(--hue), 90%, 30%, 0.3);
+}
 
 /*=============== HOME ===============*/
 
