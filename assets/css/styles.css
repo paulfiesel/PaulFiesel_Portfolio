@@ -176,7 +176,7 @@ img {
 }
 
 .profile__img {
-  width: 150px;
+  width: 350px;
 }
 
 .main {
@@ -267,6 +267,14 @@ img {
 }
 
 /* Change background header */
+.bg-header {
+  background-color: var(--body-color);
+  box-shadow: 0 2px 16px var(--shadow-color);
+}
+
+.bg-header :is(.nav__logo, .nav__toggle) {
+  color: var(--title-color);
+}
 
 /* Header background color of other pages */
 .header-pages {
@@ -350,6 +358,38 @@ img {
 }
 
 /*=============== ABOUT ===============*/
+.about__page {
+  padding-bottom: 4rem;
+}
+
+.about__profile {
+  justify-self: center;
+}
+
+.about__content {
+  row-gap: 4rem;
+}
+
+.about__data {
+  row-gap: 2rem;
+}
+
+.about__info {
+  row-gap: 0.75rem;
+  text-align: center;
+}
+
+.about__name {
+  font-size: var(--h1-font-size);
+}
+
+.about__profession {
+  font-size: var(--h2-font-size);
+}
+
+.about__description b {
+  color: var(--first-color);
+}
 
 /*=============== SERVICES ===============*/
 
