@@ -412,6 +412,8 @@ img {
 
 .about__skills-content {
   grid-template-columns: repeat(5, max-content);
+  justify-content: center;
+  align-items: center;
 }
 
 /*=============== SERVICES ===============*/
