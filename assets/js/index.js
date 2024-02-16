@@ -13,6 +13,14 @@ modalButton.forEach((modalButton, i) => {
     })
 })
 
+modalClose.forEach((modalClose) => {
+    modalClose.addEventListener('click', () => {
+        modal.forEach((modalRemove) => {
+            modalRemove.classList.remove('active-modal')
+        })
+    })
+})
+
 /*=============== SWIPER TESTIMONIAL ===============*/
 
 
