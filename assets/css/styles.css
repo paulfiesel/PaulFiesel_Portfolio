@@ -161,8 +161,8 @@ img {
 }
 
 .profile__content {
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   border: 10px solid var(--first-color);
   border-radius: 50%;
   overflow: hidden;
@@ -317,7 +317,7 @@ img {
 }
 
 .home__container {
-  padding-block: 1rem 3rem;
+  padding-block: 2rem 3rem;
 }
 
 .home__profile {
@@ -458,8 +458,8 @@ img {
   display: grid;
   place-items: center;
   padding: 2rem 1.5rem;
-  /* opacity: 0;
-  visibility: hidden; */
+  opacity: 0;
+  visibility: hidden;
   z-index: var(--z-modal);
   transition: opacity 0.4s, visibility 0.4s;
 }
@@ -495,7 +495,24 @@ img {
   list-style: square;
 }
 
+.services__modal-item::marker {
+  color: var(--first-color);
+}
+
+.services__modal-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--first-color);
+  cursor: pointer;
+}
+
 /* Active modal */
+.active-modal {
+  opacity: 1;
+  visibility: visible;
+}
 
 /*=============== WORK ===============*/
 
