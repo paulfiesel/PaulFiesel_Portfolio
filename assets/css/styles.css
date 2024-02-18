@@ -588,6 +588,7 @@ img {
 .testimonial__img {
   filter: grayscale(1);
   transition: filter 0.4s;
+  object-fit: cover;
 }
 
 .testimonial__name {
@@ -600,6 +601,18 @@ img {
 }
 
 /* Swiper class */
+.swiper-paginations-bullets.swiper-pagination-horizontal {
+  bottom: -1rem;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--first-color-light);
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--first-color);
+}
 
 /*=============== CONTACT ===============*/
 
