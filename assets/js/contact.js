@@ -7,5 +7,22 @@ const sendEmail = (e) => {
 }
 
 // serviceID - templateID - #form - publickKey
+emailjs.sendForm('service_ngvkvg3', 'template_x61kjpm', '#contact-form', 'dhq6Qm1ZqXeeZFInC')
+    .then(() => {
+        //Show sent message
+        contactMessage.textContent = 'Message sent successfully ✅'
 
-contactForm.addEventListener('submit', sendEmail)
+        //Remove message after five seconds
+        setTimeout(() => {
+            contactMessage.textContent = ''
+        }, 5000)
+
+        // Clear input fields
+        contactForm.reset()
+    }, () => {
+        // Show error message
+        contactMessage.textContent = 'Message not sent (service error) ❌'
+
+    });
+
+contactForm.addEventListener('submit', sendEmail);
