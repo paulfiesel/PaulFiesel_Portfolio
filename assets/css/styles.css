@@ -848,6 +848,22 @@ body.dark-theme {
 }
 
 /* For medium devices */
+@media  and (min-width: 576px) {
+  .services__container{
+    grid-template-columns: 320px;
+    justify-content: center;
+  }
+
+  .services__modal-content {
+    width: 400px;
+  }
+
+  .work__container{
+    grid-template-columns: 350px;
+    justify-content: center;
+  }
+}
+
 
 /* For large devices */
 
